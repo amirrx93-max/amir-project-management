@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#173b35">
+<title>مدیریت کار و پروژه امیر دشتی</title>
+<style>
+:root{--bg:#f3f6f5;--panel:#fff;--ink:#172a27;--muted:#6b7c78;--brand:#173b35;--brand2:#28665a;--line:#e0e8e5;--red:#b93838;--gold:#a76b16;--shadow:0 8px 24px rgba(20,55,47,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.8}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+header{background:linear-gradient(130deg,#173b35,#28665a);color:white;padding:22px 16px 18px;position:sticky;top:0;z-index:5;box-shadow:0 4px 18px #143b3530}
+.header-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand h1{font-size:19px;margin:0 0 2px}.brand p{margin:0;color:#d6e6e1;font-size:12px}.manager{font-size:11px;border:1px solid #ffffff55;border-radius:30px;padding:5px 10px;white-space:nowrap}
+.app{max-width:1100px;margin:auto;padding:16px 12px 40px}.nav{display:flex;gap:7px;overflow:auto;padding:2px 0 13px;scrollbar-width:thin}.nav button{border:1px solid var(--line);background:#fff;color:#415650;border-radius:12px;padding:9px 13px;white-space:nowrap}.nav button.active{background:var(--brand);border-color:var(--brand);color:white}
+.page{display:none}.page.active{display:block}.page-title{font-size:19px;margin:7px 0 14px}.sub{color:var(--muted);font-size:12px;margin-top:-9px;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.stat,.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--shadow)}.stat .label{color:var(--muted);font-size:12px}.stat strong{display:block;font-size:21px;margin-top:5px;overflow-wrap:anywhere}.stat small{color:var(--muted);font-size:11px}
+.grid-two{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}.card h3{margin:0 0 10px;font-size:15px}.empty{padding:15px;text-align:center;color:var(--muted);background:#f8faf9;border-radius:10px}
+form{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:14px}.field{display:flex;flex-direction:column;gap:4px}.field label{font-size:12px;color:#536760}.field input,.field select,.field textarea{width:100%;border:1px solid #d6e1dd;border-radius:10px;padding:10px;background:#fff;color:var(--ink);min-width:0}.field textarea{min-height:76px;resize:vertical}
+.btn{border:0;border-radius:10px;padding:10px 14px;background:var(--brand);color:#fff}.btn.secondary{background:#e8f0ed;color:var(--brand)}.btn.danger{background:#fff0ef;color:var(--red)}.btn.small{padding:5px 9px;font-size:12px}.form-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.list{display:grid;gap:9px}.item{background:#fff;border:1px solid var(--line);border-radius:13px;padding:12px;display:flex;gap:12px;justify-content:space-between;align-items:flex-start}.item-main{min-width:0;flex:1}.item-title{font-weight:bold;overflow-wrap:anywhere}.meta{font-size:12px;color:var(--muted);overflow-wrap:anywhere}.amount{font-weight:bold;white-space:nowrap}.actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.pill{display:inline-block;border-radius:30px;padding:2px 8px;font-size:11px;background:#e8f4ed;color:#236344}.pill.red{background:#ffeded;color:#a32d2d}.pill.gold{background:#fff4dd;color:#8a5b0a}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:530px}th,td{text-align:right;border-bottom:1px solid var(--line);padding:9px 7px;font-size:12px}th{color:var(--muted);font-weight:normal}
+.banner{background:linear-gradient(135deg,#173b35,#347566);color:white;border-radius:18px;padding:22px 18px;margin-bottom:13px}.banner h2{margin:0 0 4px;font-size:21px}.banner p{margin:0;color:#e0efea}.services{display:grid;grid-template-columns:1fr;gap:8px}.service{background:#f5f9f7;border:1px solid var(--line);padding:10px;border-radius:10px}.contact-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.contact-row a{color:var(--brand);background:#e8f0ed;padding:8px 12px;border-radius:9px;text-decoration:none;font-weight:bold}
+.note{font-size:12px;color:var(--muted);margin-top:10px}.divider{border:0;border-top:1px solid var(--line);margin:14px 0}
+@media(min-width:650px){.app{padding:22px 18px 45px}.stats{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-two{grid-template-columns:1fr 1fr}form.form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.field.full,.form-actions.full{grid-column:1/-1}.services{grid-template-columns:1fr 1fr}.brand h1{font-size:22px}}
+@media(min-width:900px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}.nav{flex-wrap:wrap}.nav button{flex:1}}
+</style>
+</head>
+<body>
+<header><div class="header-inner"><div class="brand"><h1>مدیریت کار و پروژه امیر دشتی</h1><p>گروه سنگکاران ارانوس</p></div><div class="manager">دسترسی مدیر</div></div></header>
+<main class="app">
+<nav class="nav" aria-label="منوی اصلی">
+<button class="active" data-page="dashboard">داشبورد</button><button data-page="workers">کارگرها</button><button data-page="projects">پروژه‌ها</button><button data-page="receipts">دریافتی‌ها</button><button data-page="expenses">هزینه‌های خانه</button><button data-page="ads">تبلیغات</button>
+</nav>
+<section id="dashboard" class="page active">
+<h2 class="page-title">داشبورد مدیریتی</h2><p class="sub">خلاصه وضعیت کسب‌وکار و امور مالی</p>
+<div class="stats">
+<div class="stat"><span class="label">تعداد پروژه‌ها</span><strong id="statProjects">۰</strong><small>همه پروژه‌های ثبت‌شده</small></div>
+<div class="stat"><span class="label">تعداد کارگرها</span><strong id="statWorkers">۰</strong><small>افراد ثبت‌شده</small></div>
+<div class="stat"><span class="label">مجموع دریافتی‌ها</span><strong id="statReceipts">۰ تومان</strong><small>تمام پرداخت‌های ثبت‌شده</small></div>
+<div class="stat"><span class="label">هزینه‌های خانه</span><strong id="statExpenses">۰ تومان</strong><small>جمع هزینه‌های ثبت‌شده</small></div>
+</div>
+<div class="grid-two"><div class="card"><h3>خلاصه مالی</h3><div class="item"><div class="item-main">کل دریافتی‌ها</div><div class="amount" id="financeReceipts">۰</div></div><div class="item"><div class="item-main">کل هزینه‌های خانه</div><div class="amount" id="financeExpenses">۰</div></div><div class="item"><div class="item-main">مانده پس از هزینه‌های خانه</div><div class="amount" id="financeBalance">۰</div></div><p class="note">این مانده فقط دریافتی‌ها منهای هزینه‌های خانه است و سود خالص کسب‌وکار محسوب نمی‌شود.</p></div>
+<div class="card"><h3>وضعیت پروژه‌ها</h3><div id="projectStatus"></div></div></div>
+<div class="card" style="margin-top:12px"><h3>آخرین دریافتی‌ها</h3><div id="recentReceipts" class="list"></div></div>
+</section>
+<section id="workers" class="page">
+<h2 class="page-title">مدیریت کارگرها</h2><p class="sub">ثبت مشخصات، دستمزد و حضور و غیاب؛ فقط برای مدیر</p>
+<div class="card"><h3 id="workerFormTitle">افزودن کارگر</h3><form id="workerForm" class="form-grid"><input type="hidden" id="workerId"><div class="field"><label for="workerName">نام و نام خانوادگی *</label><input id="workerName" required placeholder="نام کارگر"></div><div class="field"><label for="workerWage">دستمزد (تومان)</label><input id="workerWage" type="number" min="0" inputmode="numeric" placeholder="مثلاً ۱۵۰۰۰۰۰"></div><div class="field full"><label for="workerNote">توضیحات</label><input id="workerNote" placeholder="تخصص یا توضیحات اختیاری"></div><div class="form-actions full"><button class="btn" type="submit">ذخیره کارگر</button><button class="btn secondary" type="button" onclick="resetWorkerForm()">پاک‌کردن فرم</button></div></form></div>
+<div class="card" style="margin-top:12px"><h3>ثبت حضور و غیاب</h3><form id="attendanceForm" class="form-grid"><div class="field"><label for="attWorker">کارگر</label><select id="attWorker" required></select></div><div class="field"><label for="attDate">تاریخ</label><input id="attDate" type="date" required></div><div class="field"><label for="attStatus">وضعیت</label><select id="attStatus"><option value="حاضر">حاضر</option><option value="غایب">غایب</option><option value="مرخصی">مرخصی</option></select></div><div class="field"><label for="attNote">یادداشت</label><input id="attNote" placeholder="اختیاری"></div><div class="form-actions full"><button class="btn" type="submit">ثبت حضور و غیاب</button></div></form><div id="attendanceList" class="list"></div></div>
+<div class="card" style="margin-top:12px"><h3>فهرست کارگرها و سوابق</h3><div id="workersList" class="list"></div></div>
+</section>
+<section id="projects" class="page">
+<h2 class="page-title">مدیریت پروژه‌ها</h2><p class="sub">ثبت قراردادها و پیگیری وضعیت اجرا</p>
+<div class="card"><h3 id="projectFormTitle">افزودن پروژه</h3><form id="projectForm" class="form-grid"><input type="hidden" id="projectId"><div class="field"><label for="projectName">نام پروژه *</label><input id="projectName" required placeholder="مثلاً سنگ‌کاری ساختمان"></div><div class="field"><label for="clientName">نام کارفرما</label><input id="clientName" placeholder="نام کارفرما"></div><div class="field"><label for="contractAmount">مبلغ قرارداد (تومان)</label><input id="contractAmount" type="number" min="0" inputmode="numeric" placeholder="مبلغ کل قرارداد"></div><div class="field"><label for="projectState">وضعیت پروژه</label><select id="projectState"><option>در حال اجرا</option><option>در انتظار شروع</option><option>تکمیل‌شده</option><option>متوقف‌شده</option></select></div><div class="field full"><label for="projectDescription">توضیحات</label><textarea id="projectDescription" placeholder="شرح کار، نشانی یا جزئیات قرارداد"></textarea></div><div class="form-actions full"><button class="btn" type="submit">ذخیره پروژه</button><button class="btn secondary" type="button" onclick="resetProjectForm()">پاک‌کردن فرم</button></div></form></div>
+<div class="card" style="margin-top:12px"><h3>پروژه‌های ثبت‌شده</h3><div id="projectsList" class="list"></div></div>
+</section>
+<section id="receipts" class="page">
+<h2 class="page-title">ثبت دریافتی‌ها</h2><p class="sub">ثبت هر مبلغی که از کارفرما دریافت می‌شود</p>
+<div class="card"><form id="receiptForm" class="form-grid"><div class="field"><label for="receiptProject">پروژه</label><select id="receiptProject" required></select></div><div class="field"><label for="receiptAmount">مبلغ دریافتی (تومان) *</label><input id="receiptAmount" type="number" min="1" required inputmode="numeric"></div><div class="field"><label for="receiptDate">تاریخ</label><input id="receiptDate" type="date" required></div><div class="field"><label for="receiptNote">یادداشت</label><input id="receiptNote" placeholder="مثلاً پیش‌پرداخت"></div><div class="form-actions full"><button class="btn" type="submit">ثبت دریافتی</button></div></form></div>
+<div class="stats" style="margin-top:12px"><div class="stat"><span class="label">مجموع دریافتی‌ها</span><strong id="receiptTotal">۰ تومان</strong></div><div class="stat"><span class="label">تعداد ثبت‌ها</span><strong id="receiptCount">۰</strong></div></div>
+<div class="card" style="margin-top:12px"><h3>سوابق دریافتی‌ها</h3><div id="receiptsList" class="list"></div></div>
+</section>
+<section id="expenses" class="page">
+<h2 class="page-title">هزینه‌های خانه</h2><p class="sub">ثبت و بررسی هزینه‌های روزمره خانه</p>
+<div class="card"><form id="expenseForm" class="form-grid"><div class="field"><label for="expenseTitle">عنوان هزینه *</label><input id="expenseTitle" required placeholder="مثلاً خرید روزانه"></div><div class="field"><label for="expenseAmount">مبلغ (تومان) *</label><input id="expenseAmount" type="number" min="1" required inputmode="numeric"></div><div class="field"><label for="expenseDate">تاریخ</label><input id="expenseDate" type="date" required></div><div class="field"><label for="expenseNote">یادداشت</label><input id="expenseNote" placeholder="اختیاری"></div><div class="form-actions full"><button class="btn" type="submit">ثبت هزینه</button></div></form></div>
+<div class="stats" style="margin-top:12px"><div class="stat"><span class="label">مجموع کل هزینه‌ها</span><strong id="expenseTotal">۰ تومان</strong></div><div class="stat"><span class="label">تعداد هزینه‌ها</span><strong id="expenseCount">۰</strong></div></div>
+<div class="card" style="margin-top:12px"><h3>سوابق هزینه‌ها</h3><div id="expensesList" class="list"></div></div>
+</section>
+<section id="ads" class="page">
+<h2 class="page-title">معرفی خدمات و تبلیغات</h2><p class="sub">اطلاعات تماس را تکمیل کنید تا دکمه‌های تماس و ایمیل فعال شوند.</p>
+<div class="banner"><h2>امیر دشتی</h2><p>اجرای تخصصی پروژه‌های ساختمانی</p><p style="margin-top:8px">گروه سنگکاران ارانوس</p></div>
+<div class="card"><h3>لیست خدمات</h3><div class="services">
+<div class="service">اجرای تخصصی سنگ‌کاری ساختمان</div><div class="service">نصب سنگ نما و دیوار</div><div class="service">سنگ‌کاری راه‌پله و پاگرد</div><div class="service">سنگ‌کاری کف و محوطه</div><div class="service">اجرای سنگ سرویس‌ها و فضاهای داخلی</div><div class="service">ترمیم، تعویض و بازسازی سنگ</div><div class="service">برآورد و اجرای پروژه بر اساس قرارداد</div><div class="service">مشاوره انتخاب و اجرای سنگ ساختمانی</div></div>
+<hr class="divider"><h3>اطلاعات تماس کسب‌وکار</h3><form id="contactForm" class="form-grid"><div class="field"><label for="contactPhone">شماره تماس</label><input id="contactPhone" inputmode="tel" placeholder="مثلاً 09xxxxxxxxx"></div><div class="field"><label for="contactEmail">ایمیل</label><input id="contactEmail" type="email" placeholder="name@example.com"></div><div class="field full"><label for="contactExtra">توضیح تبلیغاتی (اختیاری)</label><textarea id="contactExtra" placeholder="توضیح کوتاه درباره کیفیت یا محدوده خدمات"></textarea></div><div class="form-actions full"><button class="btn" type="submit">ذخیره اطلاعات تماس</button></div></form><div id="contactLinks" class="contact-row"></div><p class="note">شماره و ایمیل باید توسط مدیر وارد شوند؛ این برنامه آن‌ها را ذخیره می‌کند و به‌صورت لینک قابل کلیک نمایش می‌دهد.</p></div>
+</section>
+<p class="note" style="text-align:center;margin-top:22px">اطلاعات این برنامه روی همین مرورگر و همین دستگاه ذخیره می‌شود.</p>
+</main>
+<script>
+const KEY='aranous_manager_app_v1';
+const blank=()=>({workers:[],attendance:[],projects:[],receipts:[],expenses:[],contact:{phone:'',email:'',extra:''}});
+let db;
+try{db=JSON.parse(localStorage.getItem(KEY))||blank()}catch(e){db=blank()}
+function save(){localStorage.setItem(KEY,JSON.stringify(db));render()}
+function id(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function byId(x){return document.getElementById(x)}
+function val(x){return byId(x).value.trim()}
+function setVal(x,v=''){byId(x).value=v??''}
+function escapeHtml(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function money(n){return (Number(n)||0).toLocaleString('fa-IR')+' تومان'}
+function num(n){return (Number(n)||0).toLocaleString('fa-IR')}
+function today(){let d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function dateFa(s){if(!s)return '—';return s.split('-').reverse().join('/')}
+function empty(msg){return `<div class="empty">${msg}</div>`}
+function projectName(pid){return db.projects.find(p=>p.id===pid)?.name||'پروژه حذف‌شده'}
+function statusPill(s){let c=s==='تکمیل‌شده'||s==='حاضر'?'':(s==='متوقف‌شده'||s==='غایب'?'red':'gold');return `<span class="pill ${c}">${escapeHtml(s||'—')}</span>`}
+function render(){
+ byId('statProjects').textContent=num(db.projects.length);byId('statWorkers').textContent=num(db.workers.length);
+ const rt=db.receipts.reduce((a,x)=>a+Number(x.amount||0),0), et=db.expenses.reduce((a,x)=>a+Number(x.amount||0),0);
+ byId('statReceipts').textContent=money(rt);byId('statExpenses').textContent=money(et);
+ byId('financeReceipts').textContent=money(rt);byId('financeExpenses').textContent=money(et);byId('financeBalance').textContent=money(rt-et);
+ byId('projectStatus').innerHTML=db.projects.length?['در حال اجرا','در انتظار شروع','تکمیل‌شده','متوقف‌شده'].map(s=>`<div class="item"><div class="item-main">${s}</div><strong>${num(db.projects.filter(p=>p.state===s).length)}</strong></div>`).join(''):empty('هنوز پروژه‌ای ثبت نشده است.');
+ byId('recentReceipts').innerHTML=db.receipts.length?[...db.receipts].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,4).map(r=>`<div class="item"><div class="item-main"><div class="item-title">${escapeHtml(projectName(r.projectId))}</div><div class="meta">${dateFa(r.date)} ${r.note?'· '+escapeHtml(r.note):''}</div></div><div class="amount">${money(r.amount)}</div></div>`).join(''):empty('هنوز دریافتی ثبت نشده است.');
+ renderWorkers();renderAttendance();renderProjects();renderReceipts();renderExpenses();renderContact();
+}
+function renderWorkers(){
+ byId('workersList').innerHTML=db.workers.length?db.workers.map(w=>{let records=db.attendance.filter(a=>a.workerId===w.id).sort((a,b)=>b.date.localeCompare(a.date));return `<div class="item"><div class="item-main"><div class="item-title">${escapeHtml(w.name)}</div><div class="meta">دستمزد: ${money(w.wage)} ${w.note?'· '+escapeHtml(w.note):''}</div><div class="meta">سوابق: ${records.length?records.slice(0,5).map(a=>`${dateFa(a.date)}: ${a.status}`).join(' | '):'ثبت نشده'}</div><div class="actions"><button class="btn secondary small" onclick="editWorker('${w.id}')">ویرایش</button><button class="btn danger small" onclick="deleteWorker('${w.id}')">حذف</button></div></div></div>`}).join(''):empty('هنوز کارگری ثبت نشده است.');
+ byId('attWorker').innerHTML='<option value="">انتخاب کارگر</option>'+db.workers.map(w=>`<option value="${w.id}">${escapeHtml(w.name)}</option>`).join('');
+}
+function renderAttendance(){let rows=[...db.attendance].sort((a,b)=>b.date.localeCompare(a.date));byId('attendanceList').innerHTML=rows.length?rows.map(a=>`<div class="item"><div class="item-main"><div class="item-title">${escapeHtml(db.workers.find(w=>w.id===a.workerId)?.name||'کارگر حذف‌شده')} · ${statusPill(a.status)}</div><div class="meta">${dateFa(a.date)} ${a.note?'· '+escapeHtml(a.note):''}</div><div class="actions"><button class="btn danger small" onclick="deleteAttendance('${a.id}')">حذف سابقه</button></div></div></div>`).join(''):empty('هنوز حضور و غیابی ثبت نشده است.')}
+function renderProjects(){
+ byId('projectsList').innerHTML=db.projects.length?db.projects.map(p=>`<div class="item"><div class="item-main"><div class="item-title">${escapeHtml(p.name)} · ${statusPill(p.state)}</div><div class="meta">کارفرما: ${escapeHtml(p.client||'—')} · مبلغ قرارداد: ${money(p.amount)}</div>${p.description?`<div class="meta">${escapeHtml(p.description)}</div>`:''}<div class="actions"><button class="btn secondary small" onclick="editProject('${p.id}')">ویرایش</button><button class="btn danger small" onclick="deleteProject('${p.id}')">حذف</button></div></div></div>`).join(''):empty('هنوز پروژه‌ای ثبت نشده است.');
+ byId('receiptProject').innerHTML='<option value="">انتخاب پروژه</option>'+db.projects.map(p=>`<option value="${p.id}">${escapeHtml(p.name)}</option>`).join('');
+}
+function renderReceipts(){let total=db.receipts.reduce((a,r)=>a+Number(r.amount||0),0);byId('receiptTotal').textContent=money(total);byId('receiptCount').textContent=num(db.receipts.length);byId('receiptsList').innerHTML=db.receipts.length?[...db.receipts].sort((a,b)=>b.date.localeCompare(a.date)).map(r=>`<div class="item"><div class="item-main"><div class="item-title">${escapeHtml(projectName(r.projectId))}</div><div class="meta">${dateFa(r.date)} ${r.note?'· '+escapeHtml(r.note):''}</div><div class="actions"><button class="btn danger small" onclick="deleteReceipt('${r.id}')">حذف</button></div></div><div class="amount">${money(r.amount)}</div></div>`).join(''):empty('هنوز دریافتی ثبت نشده است.')}
+function renderExpenses(){let total=db.expenses.reduce((a,e)=>a+Number(e.amount||0),0);byId('expenseTotal').textContent=money(total);byId('expenseCount').textContent=num(db.expenses.length);byId('expensesList').innerHTML=db.expenses.length?[...db.expenses].sort((a,b)=>b.date.localeCompare(a.date)).map(e=>`<div class="item"><div class="item-main"><div class="item-title">${escapeHtml(e.title)}</div><div class="meta">${dateFa(e.date)} ${e.note?'· '+escapeHtml(e.note):''}</div><div class="actions"><button class="btn danger small" onclick="deleteExpense('${e.id}')">حذف</button></div></div><div class="amount">${money(e.amount)}</div></div>`).join(''):empty('هنوز هزینه‌ای ثبت نشده است.')}
+function renderContact(){setVal('contactPhone',db.contact.phone);setVal('contactEmail',db.contact.email);setVal('contactExtra',db.contact.extra);let links=[];if(db.contact.phone){let tel=db.contact.phone.replace(/[^\d+]/g,'');links.push(`<a href="tel:${escapeHtml(tel)}">تماس با ${escapeHtml(db.contact.phone)}</a>`)}if(db.contact.email)links.push(`<a href="mailto:${escapeHtml(db.contact.email)}">ارسال ایمیل</a>`);byId('contactLinks').innerHTML=links.join('')||'<span class="note">برای فعال شدن لینک‌ها، شماره تماس یا ایمیل را وارد و ذخیره کنید.</span>'}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===b.dataset.page));window.scrollTo({top:0,behavior:'smooth'})}));
+function resetWorkerForm(){byId('workerForm').reset();setVal('workerId');byId('workerFormTitle').textContent='افزودن کارگر'}
+function editWorker(i){let w=db.workers.find(x=>x.id===i);if(!w)return;setVal('workerId',w.id);setVal('workerName',w.name);setVal('workerWage',w.wage);setVal('workerNote',w.note);byId('workerFormTitle').textContent='ویرایش کارگر';byId('workerName').focus();window.scrollTo({top:0,behavior:'smooth'})}
+function deleteWorker(i){if(!confirm('این کارگر حذف شود؟ سوابق حضور و غیاب او نیز حذف می‌شود.'))return;db.workers=db.workers.filter(w=>w.id!==i);db.attendance=db.attendance.filter(a=>a.workerId!==i);save()}
+byId('workerForm').addEventListener('submit',e=>{e.preventDefault();let i=val('workerId'),w={id:i||id(),name:val('workerName'),wage:Number(val('workerWage'))||0,note:val('workerNote')};if(i)db.workers=db.workers.map(x=>x.id===i?w:x);else db.workers.push(w);resetWorkerForm();save()});
+byId('attendanceForm').addEventListener('submit',e=>{e.preventDefault();if(!val('attWorker'))return alert('ابتدا یک کارگر انتخاب کنید.');db.attendance.push({id:id(),workerId:val('attWorker'),date:val('attDate'),status:val('attStatus'),note:val('attNote')});setVal('attNote');save()});
+function deleteAttendance(i){if(confirm('این سابقه حذف شود؟')){db.attendance=db.attendance.filter(a=>a.id!==i);save()}}
+function resetProjectForm(){byId('projectForm').reset();setVal('projectId');byId('projectFormTitle').textContent='افزودن پروژه'}
+function editProject(i){let p=db.projects.find(x=>x.id===i);if(!p)return;setVal('projectId',p.id);setVal('projectName',p.name);setVal('clientName',p.client);setVal('contractAmount',p.amount);setVal('projectState',p.state);setVal('projectDescription',p.description);byId('projectFormTitle').textContent='ویرایش پروژه';byId('projectName').focus();window.scrollTo({top:0,behavior:'smooth'})}
+function deleteProject(i){if(!confirm('پروژه حذف شود؟ دریافتی‌های مرتبط باقی می‌مانند و نام پروژه حذف‌شده نشان داده می‌شود.'))return;db.projects=db.projects.filter(p=>p.id!==i);save()}
+byId('projectForm').addEventListener('submit',e=>{e.preventDefault();let i=val('projectId'),p={id:i||id(),name:val('projectName'),client:val('clientName'),amount:Number(val('contractAmount'))||0,state:val('projectState'),description:val('projectDescription')};if(i)db.projects=db.projects.map(x=>x.id===i?p:x);else db.projects.push(p);resetProjectForm();save()});
+byId('receiptForm').addEventListener('submit',e=>{e.preventDefault();if(!val('receiptProject'))return alert('ابتدا یک پروژه انتخاب کنید.');db.receipts.push({id:id(),projectId:val('receiptProject'),amount:Number(val('receiptAmount')),date:val('receiptDate'),note:val('receiptNote')});byId('receiptForm').reset();setVal('receiptDate',today());save()});
+function deleteReceipt(i){if(confirm('این دریافتی حذف شود؟')){db.receipts=db.receipts.filter(r=>r.id!==i);save()}}
+byId('expenseForm').addEventListener('submit',e=>{e.preventDefault();db.expenses.push({id:id(),title:val('expenseTitle'),amount:Number(val('expenseAmount')),date:val('expenseDate'),note:val('expenseNote')});byId('expenseForm').reset();setVal('expenseDate',today());save()});
+function deleteExpense(i){if(confirm('این هزینه حذف شود؟')){db.expenses=db.expenses.filter(x=>x.id!==i);save()}}
+byId('contactForm').addEventListener('submit',e=>{e.preventDefault();db.contact={phone:val('contactPhone'),email:val('contactEmail'),extra:val('contactExtra')};save();alert('اطلاعات تماس ذخیره شد.')});
+['attDate','receiptDate','expenseDate'].forEach(x=>setVal(x,today()));
+render();
+</script>
+</body>
+</html>
